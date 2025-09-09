@@ -1,0 +1,15 @@
+h2 {
+text-align: center;
+}
+h3 {
+color: red;
+text-align: center;
+}
+p {
+color: #800000;
+text-align: center;
+}
+img {
+display: block;
+margin: 0 auto;
+}

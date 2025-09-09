@@ -1,0 +1,10 @@
+p {
+	color: teal;
+	background: seashell;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+.Class_A {
+	color: blue;
+}
