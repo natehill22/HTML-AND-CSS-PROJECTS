@@ -1,0 +1,10 @@
+@keyframes wiggle {
+	0% { transform: translateX(0px); } 
+	50% { transform: translateX(2px); } 
+	100% { transform: translateX(-2px); } 
+}
+
+span.wiggle {
+  display: inline-block;
+  animation: wiggle 0.35s infinite;
+}
