@@ -1,18 +1,19 @@
-@font-face{
-    font-family: autobahn;
-    src: url("autobahn/autobahn.woff") format('woff');
+@font-face {
+    font-family: 'autobahn';
+    src: url('autobahn/autobahn.woff') format('woff');
 }
+
 @font-face{
     font-family: MrSaturn;
     src: url("MrSaturn.ttf") format('truetype');
 }
 
 h1{
-    font-family: autobahn;
+    font-family: 'autobahn';
 }
 
 div p{
-    font-family: MrSaturn;
+    font-family: 'MrSaturn';
 }
 
 /*NAVBAR*/
