@@ -1,0 +1,8 @@
+mark{
+    background-color: olive;
+    color: magenta;
+}
+
+.mask1{
+    mask: url(https://codrops-1f606.kxcdn.com/codrops/wp-content/uploads/2014/10/mask-image.png?x24876) no-repeat 10%;
+}

@@ -19,7 +19,7 @@ ul{
     display:flex; /*Creates a flex container which will expand or shrink elements to fill the space available to them and place the elements side by side horizontally*/
     list-style-type: none; /*Removes the default styling for unordered list elements*/
     align-items: center;
-    margin: -8px -8px 0px -8px; /*The margin order is top, right, bottom, and left. Te negative margins will stretch the background beyond the edge of the browser screen*/
+    margin: -8px -8px 0px -8px; /*The margin order is top, right, bottom, and left. The negative margins will stretch the background beyond the edge of the browser screen*/
     background-color: rgb(1, 128, 106);
     border-bottom: 5px solid rgb(247, 177, 188);
 }
