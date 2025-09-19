@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'autobahn';
-    src: url('./autobahn/autobahn.woff') format('woff');
+    src: url('./css/autobahn/autobahn.woff') format('woff');
 }
 
 @font-face{
     font-family: MrSaturn;
-    src: url("./MrSaturn.ttf") format('truetype');
+    src: url("./css/MrSaturn.ttf") format('truetype');
 }
 
 h1{
