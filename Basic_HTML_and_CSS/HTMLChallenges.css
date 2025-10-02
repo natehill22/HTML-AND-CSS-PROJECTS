@@ -1,0 +1,244 @@
+/*Applied to make space for content considering the sticky fixed footer*/
+body{
+    padding-bottom: 100px;
+}
+
+/*NAVBAR*/
+.nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+
+ul{
+    display: flex;
+    min-width: 600px;
+    list-style-type: none;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    margin: -8px -8px 0px -8px;
+    background-color: #BB5265;
+    border-bottom: 3px solid rgb(112, 128, 144);
+}
+
+li a{
+    display: block;
+    font-size: 25px;
+    font-weight: 800;
+    color: rgb(20, 27, 27);
+    width: 100px;
+    padding: 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+li a:hover{
+    background-color: rgb(20, 27, 27);
+    color: #BB5265;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7);
+    transition: background-color 0.3s ease;
+}
+
+#about, #contact, #videos{
+    scroll-margin-top: 75px;
+}
+
+/*Applies a center alignment to the parent container to address the issue of centering an inline-block child element*/
+#imagesec, #contact{
+    text-align: center;
+}
+
+.container{
+    position: relative;
+    display: inline-block;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.imgcenter{
+    margin: 30px auto;
+    border-radius: 15px;
+    transition: filter 0.6s ease;
+}
+
+/*Sets up the landscape1 image to have sepia filter and text displayed upon hover*/
+.centeredtext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.container:hover .centeredtext{
+    opacity: 1;
+}
+
+.container:hover #imglandscape{
+    filter: sepia(100%);
+}
+
+/*Sets up the oddface image to have an opacity overlay with email address displayed upon hover. Contact section image*/
+.contactoverlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 85%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.6s ease;
+    margin: 36px auto;
+    background-color: #485154;
+}
+
+.container:hover .contactoverlay{
+    opacity: 1;
+}
+
+.emailtext{
+    font-size: 20px;
+    font-weight: 300;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/*Centers both videos*/
+video{
+    display: block;
+    margin: 30px auto;
+}
+
+.video2{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.zoomcontainer{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*Sets up the candyzoom video to have text overlay displayed upon hover*/
+.candyvidtext{
+    position: absolute;
+    bottom: 25px;
+    right: 38%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.zoomcontainer:hover .candyvidtext{
+    opacity: 1;
+}
+
+/*Table CSS*/
+table{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    border: 2px solid black;
+}
+
+table td, th{
+    border-width: 1px;
+    border-style: inset;
+    border-color: black;
+    color: #000000;
+}
+
+table th{
+    background-color: slategray;
+    padding: 1px;
+}
+
+table td{
+    background-color: #BB5265;
+    padding: 3px 5px;
+}
+
+td:hover{
+    background-color: #FF7799;
+}
+
+.row{
+    display: flex;
+}
+
+.column{
+    height: 500px;
+    min-width: 600px;
+}
+
+/*Column CSS for About Section*/
+#colA{
+    background-color: #eee;
+    color: blueviolet;
+    width: 30%;
+}
+
+#colB{
+    background-color: #bbb;
+    color: blue;
+    width: 70%;
+}
+
+#colB p:hover{
+    background-color: rgb(0, 0, 61);
+    color: rgba(255, 255, 255, 0.603);
+}
+
+/*FOOTER*/
+
+footer{
+    display: block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+footer > p{
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/*MOBILE AND SMALLER RESOLUTION STYLING*/
+@media screen and (max-width: 600px) {
+    #colA > p, h3 {
+        color: blue;
+    }
+}
+
+@media screen and (max-width: 1406px) {
+    .row{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    video, img, .column{
+        max-width: 100%;
+        height: auto;
+    }
+}
