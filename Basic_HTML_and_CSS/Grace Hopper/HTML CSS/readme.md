@@ -10,7 +10,7 @@ NSA Presentation Videos:
 - https://www.youtube.com/watch?v=si9iqF5uTFk (part 1)
 - https://www.youtube.com/watch?v=AW7ZHpKuqZg (part 2)
 
-Grace Hopper event: https://ghc.anitab.org/
+Grace Hopper event: https://ghc.anitab.org/ <br>
 https://medium.com/@ghcandme/so-youre-going-to-ghc-3dd0c47869eb
 
 ### Site elements:
