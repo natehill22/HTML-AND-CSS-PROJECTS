@@ -18,13 +18,13 @@ https://medium.com/@ghcandme/so-youre-going-to-ghc-3dd0c47869eb
     - [x] To grab the attention of the reader and encourage them to expore her life
 - [x] Early life and education
 - [x] Career
-- [x] Retirement
+- [x] Retirement<br>
 ~~- Post-retirement~~
 - [x] News
 
 ### Navigation
 - [x] Single page
-- [x] Nav elements scroll down to their section on the page
+- [x] Nav elements scroll down to their section on the page<br>
 ~~- Include a "back to top" after each section???~~
 
 
