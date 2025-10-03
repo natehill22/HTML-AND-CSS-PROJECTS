@@ -6,7 +6,7 @@ This repository is for my (Nathaniel Hill's) Tech Academy HTML and CSS projects.
 - [Academy Cinemas](/Basic_HTML_and_CSS/Academy-Cinemas)
 - [Album Challenge (BootStrap)](/Basic_HTML_and_CSS/Introduction-to-Bootstrap)
 - [HTML Challenges](/Basic_HTML_and_CSS/HTML%20Challenges)
-- [Simples Recipes](/Basic_HTML_and_CSS/Simple-Recipes)
+- [Simple Recipes](/Basic_HTML_and_CSS/Simple-Recipes)
 - [The Pet Shop](/Basic_HTML_and_CSS/The_Pet_Shop_Website)
 - [One Page Website](/Basic_HTML_and_CSS/One-Page%20Website)
 - [Grace Hopper Project](/Basic_HTML_and_CSS/Grace%20Hopper/HTML%20CSS)
