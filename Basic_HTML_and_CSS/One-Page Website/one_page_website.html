@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="description" content="Variants of cobbler">
         <link href="CSS/one_page_website.css" rel="stylesheet">
+        <script src="JS/one_page_website.js" async defer></script>
     </head>
     <body>
         <!--NAVIGATION-->
@@ -34,7 +35,7 @@
         </header>
         <!--DESSERT TYPE AND IMAGES-->
         <section>
-            <div>
+            <div class="mainSec">
                 <h1>Variations:</h1>
                 <div>
                     <!--COBBLER IMAGE-->
@@ -90,6 +91,116 @@
                         <h2>Pandowdy</h2>
                         <img src="Images/pandowdy.jpg" alt="Picture of apple pandowdy" width="600" height="400">
                         <p>Puff pastry, pie, or pastry dough pressed into fruit and baked.</p><br>
+                    </div>
+                </div>
+            </div>
+            <!--LIGHTBOX-->
+            <!--Images used to open the lightbox-->
+            <div class="row">
+                <div class="column">
+                    <img src="Images/cobblerthumb.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="Images/crispthumb.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="Images/gruntthumb.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="Images/crumblethumb.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="Images/slumpthumb.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="Images/brownbettythumb.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="Images/bucklethumb.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="Images/sonkerthumb.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="Images/pandowdythumb.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow">
+                </div>
+            </div>
+            <!--LIGHTBOX MODAL-->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 9</div>
+                        <img src="Images/cobblersq.jpg" style="width: 100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 9</div>
+                        <img src="Images/crispsq.jpg" style="width: 100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 9</div>
+                        <img src="Images/gruntsq.jpg" style="width: 100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 9</div>
+                        <img src="Images/crumblesq.jpg" style="width: 100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 9</div>
+                        <img src="Images/slumpsq.jpg" style="width: 100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">6 / 9</div>
+                        <img src="Images/brownbettysq.jpg" style="width: 100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">7 / 9</div>
+                        <img src="Images/bucklesq.jpg" style="width: 100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">8 / 9</div>
+                        <img src="Images/sonkersq.jpg" style="width: 100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">9 / 9</div>
+                        <img src="Images/pandowdysq.jpg" style="width: 100%">
+                    </div>
+                    <!--Next/Previous controls-->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    <!--Caption text-->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+                    <!--Lightbox thumbnail image controls-->
+                    <div id="thumbnails">
+                        <div class="column">
+                            <img class="demo" src="Images/cobblerthumb.jpg" onclick="currentSlide(1)" alt="Cobbler">
+                        </div>
+                        <div class="column">
+                            <img class="demo" src="Images/crispthumb.jpg" onclick="currentSlide(2)" alt="Crisp">
+                        </div>
+                        <div class="column">
+                            <img class="demo" src="Images/gruntthumb.jpg" onclick="currentSlide(3)" alt="Grunt">
+                        </div>
+                        <div class="column">
+                            <img class="demo" src="Images/crumblethumb.jpg" onclick="currentSlide(4)" alt="Crumble">
+                        </div>
+                        <div class="column">
+                            <img class="demo" src="Images/slumpthumb.jpg" onclick="currentSlide(5)" alt="Slump">
+                        </div>
+                        <div class="column">
+                            <img class="demo" src="Images/brownbettythumb.jpg" onclick="currentSlide(6)" alt="Brown Betty">
+                        </div>
+                        <div class="column">
+                            <img class="demo" src="Images/bucklethumb.jpg" onclick="currentSlide(7)" alt="Buckle">
+                        </div>
+                        <div class="column">
+                            <img class="demo" src="Images/sonkerthumb.jpg" onclick="currentSlide(8)" alt="Sonker">
+                        </div>
+                        <div class="column">
+                            <img class="demo" src="Images/pandowdythumb.jpg" onclick="currentSlide(9)" alt="Pandowdy">
+                        </div>
                     </div>
                 </div>
             </div>

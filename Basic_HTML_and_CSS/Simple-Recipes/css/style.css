@@ -292,7 +292,7 @@ p{
     will-change: transform;
 }
 
-.flip:hover{
+.recipe-container:hover .flip{
     transform: rotateY(-180deg); /*Rotates an element from right to left*/
 }
 
