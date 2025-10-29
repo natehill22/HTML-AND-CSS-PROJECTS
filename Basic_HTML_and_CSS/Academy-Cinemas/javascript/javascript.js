@@ -31,12 +31,17 @@ function displaySelectedMovieOptions() {
     var toast = new bootstrap.Toast(document.getElementById('toastDisplay')); //Setting the toast variable to the newly created Bootstrap toast instance and tying it to the HTML element toastDisplay
     toast.show() //Actually shows the toast
 
-    const addToCartBtn = document.getElementById("buyticket-btn");
+    //Shows a warning alert if quantity of purchased tickets is over ten.
     if (quantity >= 10) {
-    alert("Did you mean to add more than 10 tickets?");
-    };
+        document.querySelectorAll(".alert-warning").forEach(function(element) {
+            element.style.display= "block";
+        });
+    } else { //If ticket quantity is redunced below 10, warning alert goes away
+        document.querySelectorAll(".alert-warning").forEach(function(element) {
+            element.style.display= "none";
+        });
+    }   
 }
-
 
 function buyTickets() {
     displaySelectedMovieOptions(); //When the buy tickets button is pressed to run the displaySelectedMovieOptions function

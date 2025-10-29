@@ -307,3 +307,7 @@ footer{
     z-index: 1000;
 }
 
+/*ALERT*/
+.alert-warning{
+    display: none;
+}
