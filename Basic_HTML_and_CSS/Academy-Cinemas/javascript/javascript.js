@@ -47,3 +47,22 @@ function buyTickets() {
     displaySelectedMovieOptions(); //When the buy tickets button is pressed to run the displaySelectedMovieOptions function
 }
 
+//JQUERY
+
+//Shrinks header size when the document is scrolled down by 80 pixels
+$(document).on("scroll", function () { 
+    if ($(document).scrollTop() > 50) { //When scrolled down (from the top) by 50px, add the nav-shrink class selector (to the HTML element that has the nav class) and adjust the position of the mobile drop menu to accommodate the new height decrease
+        $("nav").addClass("nav-shrink"); 
+        $("div.navbar-collapse").css("margin-top", "-6px");
+    } else {
+        $("nav").removeClass("nav-shrink"); //If the webpage has not been scrolled down or is back at the top, the nav-shrink class selector is removed from the HTML element (with the nav class selector) and 
+        $("div.navbar-collapse").css("margin-top", "14px"); //The margin for the drop down menu is now returned to it's original amount
+    }
+});
+
+//Close mobile menu when a navigation link is clicked
+$(document).ready(function () {
+    $(".navbar-nav").on('click', '.nav-link:not(".dropdown-toggle"), .dropdown-item', function() { //Upon clicking on an element that contains the nav-link class (without the dropdown-toggle) or .dropdown-item (movie links),
+        $(".navbar-collapse").collapse('hide'); //Collapse the navbar (when a link or dropdown item is clicked)
+    });
+});
